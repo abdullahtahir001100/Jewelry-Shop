@@ -1,0 +1,92 @@
+/* Buy Now Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background: #fff;
+  padding: 32px 24px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  animation: modalPop .4s cubic-bezier(.4,1.6,.6,1) both;
+}
+@keyframes modalPop {
+  0% { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.modal-content h2 {
+  color: #bfa14a;
+  margin-bottom: 18px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.modal-content label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #bfa14a;
+}
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fff;
+  color: #333;
+  transition: border 0.2s;
+}
+.modal-content input:focus,
+.modal-content textarea:focus,
+.modal-content select:focus {
+  border-color: #bfa14a;
+  outline: none;
+}
+.modal-content button[type="submit"] {
+  background: #bfa14a;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+}
+.modal-content button[type="submit"]:hover {
+  background: #a88d32;
+}
+.modal-content .close {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #bfa14a;
+  transition: color 0.2s;
+}
+.modal-content .close:hover {
+  color: #a88d32;
+}
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 16px 6px;
+    max-width: 98vw;
+  }
+}

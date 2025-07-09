@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+      <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Animate.css CDN -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/cart-modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .banner{
+            position: relative;
+        }
+        button{
+            background: transparent;
+            color: #fff;
+
+            border: none;
+        }
+        input,select{
+            padding: 10px;
+        }
+        .po{
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             position: relative;
+             top: -148px;
+
+        }
+        .btn{
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="contain">
+            <div class="flexbox">
+                <div class="logo">
+                    <div class="col-1">
+                        <div class="image">
+                            <img src="imgs/logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <nav class="flexbox">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="shop.html">Shop Now</a></li>
+                            <li><a href="product.html" class="button">Explore now</a></li>
+                            <!-- <li><button>explorn now</button></li> -->
+                        </ul>
+                         <button class="burger" onclick="openburger()"><img src="imgs/burger.png" alt=""></li>
+                    </nav>
+            </div>
+          
+        </div>
+          <div class="links" id="togal">
+                  <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="shop.html">Shop Now</a></li>
+                            <li><a href="product.html" class="button">Explore now</a></li>
+            </div>
+    </header>
+    <script>
+        function openburger() {
+            var x = document.getElementById("togal");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    <div class="cart-container">
+        <div class="cart-title"><h5>Your Shopping Cart</h5></div>
+        <table class="cart-items" id="cartTable">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Color</th>
+                    <th>Size</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="cartBody">
+            </tbody>
+        </table>
+        <div class="empty-cart" id="emptyCartMsg" style="display:none;">Your cart is empty.</div>
+        <div class="cart-total" id="cartTotal"></div>
+    </div>
+    <section class="po">
+        <div class="flexbox">
+            <div class="btn"><a href="index.html">Back To Home</a></div>
+            <div class="btn"><button onclick="openBuyNowModal()">Buy Now</button></div>
+        </div>
+    </section>
+    <!-- Buy Now Modal -->
+    <div id="buyNowModal" class="modal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); align-items:center; justify-content:center;">
+      <div class="modal-content" style="background:#fff; padding:32px 24px; border-radius:12px; max-width:400px; width:90%; margin:auto; position:relative;">
+        <span class="close" onclick="closeBuyNowModal()" style="position:absolute; top:12px; right:18px; font-size:1.8rem; cursor:pointer;">&times;</span>
+        <h2 style="color:#bfa14a; margin-bottom:18px;">Order Details</h2>
+        <form id="buyNowForm" action="https://api.web3forms.com/submit" method="POST">
+               <input type="hidden" name="access_key" value="382064f7-4bd9-4bea-8353-290696ee712c">
+          <label for="modalName">Name</label>
+          <input type="text" id="modalName" name="name" required style="width:100%;margin-bottom:10px;">
+          <label for="modalEmail">Email</label>
+          <input type="email" id="modalEmail" name="email" required style="width:100%;margin-bottom:10px;">
+          <label for="modalPhone">Phone Number</label>
+          <input type="tel" id="modalPhone" name="phone" required style="width:100%;margin-bottom:10px;">
+          <label for="modalAddress">Address</label>
+          <textarea id="modalAddress" name="address" rows="5" required style="width:100%;margin-bottom:10px;"></textarea>
+          <label for="modalItem">Item</label>
+          <textarea id="modalItem" name="items" required style="width:100%;margin-bottom:18px;" readonly></textarea>
+          <button type="submit" style="background:#bfa14a;color:#fff;padding:10px 24px;border:none;border-radius:6px;font-size:1rem;cursor:pointer;">Submit Order</button>
+        </form>
+      </div>
+    </div>
+      <section class="footer">
+            <div class="heading">
+                <h1>jwellery stor</h1>
+            </div>
+            <div class="navlinks">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flexbox">
+                <div class="icons"><a href="https://www.instagram.com/handmade_by_javeria/"><i class="fa fa-instagram"></i></a></div>
+                <div class="icons"><a href="https://www.facebook.com/share/16Jv4zNBcc/"><i class="fa fa-facebook"></i></a></div>
+                <div class="icons"><a href=" https://wa.me/+923470072307"><i class="fa fa-whatsapp"></i></a></div>
+                <div class="icons"><a href="mailto:example@email.com"><i class="fa fa-envelope"></a></i></div>
+            </div>
+        </section>
+    <script>
+    function loadCart() {
+        let cart = JSON.parse(localStorage.getItem('cartItems') || '[]');
+        const cartBody = document.getElementById('cartBody');
+        const cartTotal = document.getElementById('cartTotal');
+        const emptyCartMsg = document.getElementById('emptyCartMsg');
+        cartBody.innerHTML = '';
+        let total = 0;
+        if (cart.length === 0) {
+            emptyCartMsg.style.display = 'block';
+            cartTotal.textContent = '';
+            return;
+        } else {
+            emptyCartMsg.style.display = 'none';
+        }
+        cart.forEach((item, idx) => {
+            let color = (item.color && item.color !== 'undefined' && item.color !== '') ? item.color : '-';
+            let size = (item.size && item.size !== 'undefined' && item.size !== '') ? item.size : '-';
+            let priceNum = parseFloat(item.price.replace(/[^\d.]/g, '')) || 0;
+            total += priceNum * item.quantity;
+            cartBody.innerHTML += `
+                <tr class="sec-1 animate__animated animate__fadeInUp">
+                    <td><img src="${item.image}" alt="${item.name}"></td>
+                    <td>${item.name}</td>
+                    <td>${color}</td>
+                    <td>${size}</td>
+                    <td>${item.price}</td>
+                    <td>${item.quantity}</td>
+                    <td><button class="remove-btn" onclick="removeFromCart(${idx})">Remove</button></td>
+                </tr>
+            `;
+        });
+        cartTotal.textContent = 'Total  Price : ' + total.toFixed(2);
+    }
+    function removeFromCart(idx) {
+        let cart = JSON.parse(localStorage.getItem('cartItems') || '[]');
+        cart.splice(idx, 1);
+        localStorage.setItem('cartItems', JSON.stringify(cart));
+        loadCart();
+    }
+window.onload = function() {
+    loadCart();
+    // Populate modal item input with all items and their details (name, color, size, quantity)
+    let cart = JSON.parse(localStorage.getItem('cartItems') || '[]');
+    const modalItem = document.getElementById('modalItem');
+    if (modalItem) {
+        if (cart.length > 0) {
+            modalItem.value = cart.map(item => {
+                let color = (item.color && item.color !== 'undefined' && item.color !== '') ? item.color : '-';
+                let size = (item.size && item.size !== 'undefined' && item.size !== '') ? item.size : '-';
+                return `${item.name} | Color: ${color} | Size: ${size} | Qty: ${item.quantity}`;
+            }).join('\n');
+        } else {
+            modalItem.value = '';
+        }
+    }
+};
+
+    // Modal logic 
+function openBuyNowModal() {
+    let cart = JSON.parse(localStorage.getItem('cartItems') || '[]');
+    if (!cart.length) {
+        alert('Your cart is empty. Please add items before proceeding to Buy Now.');
+        return;
+    }
+    document.getElementById('buyNowModal').style.display = 'flex';
+    // Repopulate modal item input in case cart changed
+    const modalItem = document.getElementById('modalItem');
+    if (modalItem) {
+        if (cart.length > 0) {
+            modalItem.value = cart.map(item => {
+                let color = (item.color && item.color !== 'undefined' && item.color !== '') ? item.color : '-';
+                let size = (item.size && item.size !== 'undefined' && item.size !== '') ? item.size : '-';
+                return `${item.name} | Color: ${color} | Size: ${size} | Qty: ${item.quantity}`;
+            }).join('\n');
+        } else {
+            modalItem.value = '';
+        }
+    }
+}
+    function closeBuyNowModal() {
+        document.getElementById('buyNowModal').style.display = 'none';
+    }
+    // Form submit logic
+    function submitBuyNowForm(e) {
+        e.preventDefault();
+        // You can add AJAX or Web3Forms logic here
+        alert('Order submitted! (Demo only)');
+        closeBuyNowModal();
+        document.getElementById('buyNowForm').reset();
+    }
+
+    </script>
+</body>
+</html>

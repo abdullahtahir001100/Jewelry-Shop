@@ -1,0 +1,69 @@
+/* About Page Styles */
+.about-section {
+  padding: 60px 0;
+  background: #fff;
+}
+.about-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.about-img {
+  flex: 1 1 300px;
+  text-align: center;
+}
+.about-logo-img {
+  height: auto;
+  border-radius: 10%;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+.about-content {
+  flex: 2 1 400px;
+  background: #f9f9f9;
+  padding: 32px 40px;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+}
+.about-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #bfa14a;
+}
+.about-line {
+  width: 60px;
+  height: 4px;
+  background: #bfa14a;
+  margin-bottom: 18px;
+  border-radius: 2px;
+}
+.about-intro, .about-promise, .about-thank {
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+  color: #444;
+}
+.about-highlight {
+  color: #bfa14a;
+  font-weight: 600;
+}
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 18px;
+}
+.about-list li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+@media (max-width: 900px) {
+  .about-flex {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .about-content {
+    padding: 20px 10px;
+  }
+}

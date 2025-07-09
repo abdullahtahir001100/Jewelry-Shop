@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Stor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet"
+                    href="https://unpkg.com/swiper/swiper-bundle.css" />
+                <link rel="stylesheet"
+                    href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+                <link rel="stylesheet" href="css/style.css">
+                <link rel="stylesheet" href="css/product.css">
+                <link rel="stylesheet" href="css/form.css">
+                <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <header>
+        <div class="contain">
+            <div class="flexbox">
+                <div class="logo">
+                    <div class="col-1">
+                        <div class="image">
+                            <img src="imgs/logo.png" alt>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <nav class="flexbox">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="shop.html">Shop Now</a></li>
+                            <li><a href="product.html" class="button">Explore
+                                    now</a></li>
+                            <!-- <li><button>explorn now</button></li> -->
+                        </ul>
+                        <button class="burger" onclick="openburger()"><img
+                                src="imgs/burger.png" alt></li>
+                    </nav>
+                </div>
+
+            </div>
+            <div class="links" id="togal">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="shop.html">Shop Now</a></li>
+                <li><a href="product.html" class="button">Explore now</a></li>
+            </div>
+        </header>
+        <script>
+        function openburger() {
+            var x = document.getElementById("togal");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+        <body>
+            <section class="banner">
+                <div class="cointain">
+                    <div class="flexbox">
+                        <div
+                            class="col-1 animate__animated animate__fadeInLeft">
+                            <h1>Welcome to Our HandMade Jewelry Store</h1>
+                            <p>Discover the elegance of handcrafted jewelry that
+                                tells your story.</p>
+                            <a href="shop.html" class="button">Shop Now</a>
+                            <a href="product.html" class="button">Explor Now</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="features">
+                    <div class="cointain">
+                        <div class="flex">
+                            <div class="image">
+                                <img src="imgs/img-1.png" alt>
+                            </div>
+                            <div class="image">
+                                <img src="imgs/Screenshot 2025-07-06 154759.png"
+                                    alt>
+                            </div>
+                            <div class="image">
+                                <img src="imgs/IMG-2.png" alt>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="product">
+                    <div class="cointain">
+                        <div class="heading">
+                            <div class="h1">
+                                <h1>featured products</h1>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="shop-grid">
+                            <div
+                                class="sec-1 sec-2 animate__animated animate__fadeInLeft">
+                                <div class="image">
+                                    <img src="imgs/p55.jpg" alt id="index-1">
+                                </div>
+                                <div class="text">
+                                    <h4>Royal Radiance</h4>
+                                </div>
+                                <div class="fonts">
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="price">
+                                    <h6>1,950 Rs</h6>
+                                </div>
+                            </div>
+                            <div
+                                class="sec-1 sec-2 animate__animated animate__fadeInLeft">
+                                <div class="image">
+                                    <img src="imgs/IMG-20250706-WA0037.jpg" alt
+                                        id="index-2">
+                                </div>
+                                <div class="text">
+                                    <h4>Timeless Spark</h4>
+                                </div>
+                                <div class="fonts">
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="price">
+                                    <h6>1,700 Rs</h6>
+                                </div>
+                            </div>
+                            <div
+                                class="sec-1 sec-2 animate__animated animate__fadeInRight">
+                                <div class="image">
+                                    <img src="imgs/s16.jpg" alt id="index-3">
+                                </div>
+                                <div class="text">
+                                    <h4>Heritage Grace</h4>
+                                </div>
+                                <div class="fonts">
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="price">
+                                    <h6>1,990 Rs</h6>
+                                </div>
+                            </div>
+                            <div
+                                class="sec-1 sec-2 animate__animated animate__fadeInRight">
+                                <div class="image">
+                                    <img src="imgs/p10.jpg" alt id="index-4">
+                                </div>
+                                <div class="text">
+                                    <h4>Charm Allure</h4>
+                                </div>
+                                <div class="fonts">
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="price">
+                                    <h6>1,200 Rs</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="product">
+                    <div class="cointain">
+                        <div class="heading">
+                            <div class="h1">
+                                <h1>latest product</h1>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="shop-grid">
+                            <div class="sec-1 sec-2">
+                                <div class="image">
+                                    <img src="imgs/p4.jpg" alt id="index-5">
+                                </div>
+                                <div class="text">
+                                    <h4>Floral Dream</h4>
+                                </div>
+                                <div class="fonts">
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="price">
+                                    <h6>1,800 Rs</h6>
+                                </div>
+                            </div>
+                            <div class="sec-1 sec-2">
+                                <div class="image">
+                                    <img src="imgs/p5.jpg" alt id="index-6">
+                                </div>
+                                <div class="text">
+                                    <h4>Artisan Touch</h4>
+                                </div>
+                                <div class="fonts">
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="price">
+                                    <h6>1,350 Rs</h6>
+                                </div>
+                            </div>
+                            <div class="sec-1 sec-2">
+                                <div class="image">
+                                    <img src="imgs/p6.jpg" alt id="index-7">
+                                </div>
+                                <div class="text">
+                                    <h4>Enamel Blossom</h4>
+                                </div>
+                                <div class="fonts">
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="price">
+                                    <h6>1,600 Rs</h6>
+                                </div>
+                            </div>
+                            <div class="sec-1 sec-2">
+                                <div class="image">
+                                    <img src="imgs/p99.jpg" alt id="index-8">
+                                </div>
+                                <div class="text">
+                                    <h4>Textured Shine</h4>
+                                </div>
+                                <div class="fonts">
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="price">
+                                    <h6>1,990 Rs</h6>
+                                </div>
+                            </div>
+                            <div class="sec-1 sec-2">
+                                <div class="image">
+                                    <img src="imgs - Copy/q10.png" alt id="index-9">
+                                </div>
+                                <div class="text">
+                                    <h4>Signature Shine</h4>
+                                </div>
+                                <div class="fonts">
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="price">
+                                    <h6>1,850 Rs</h6>
+                                </div>
+                            </div>
+                            <div class="sec-1 sec-2">
+                                <div class="image">
+                                    <img src="imgs - Copy/q13.jpg" alt id="index-10">
+                                </div>
+                                <div class="text">
+                                    <h4>Modern Chic</h4>
+                                </div>
+                                <div class="fonts">
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="price">
+                                    <h6>1,300 Rs</h6>
+                                </div>
+                            </div>
+                            <div class="sec-1 sec-2">
+                                <div class="image">
+                                    <img src="imgs - Copy/q15.jpg" alt id="index-11">
+                                </div>
+                                <div class="text">
+                                    <h4>Vintage Aura</h4>
+                                </div>
+                                <div class="fonts">
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="price">
+                                    <h6>1,500 Rs</h6>
+                                </div>
+                            </div>
+                            <div class="sec-1 sec-2  ">
+                                <div class="image">
+                                    <img src="imgs - Copy/q17.jpg" alt id
+                                        id="index-12">
+                                </div>
+                                <div class="text">
+                                    <h4>Pearl Essence</h4>
+                                </div>
+                                <div class="fonts">
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <div class="price">
+                                    <h6>1,100 Rs</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="testimonial">
+                    <div class="cointain">
+                        <div class="heading">
+                            <div class="h1">
+                                <h1>Reviews</h1>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="swiper-container">
+                            <div class="card">
+                                <div class="swiper-wrapper">
+                                    <div class="testimonials swiper-slide">
+                                        <div class="background">
+                                            <div class="heading">
+                                                <div class="logo">
+                                                    <i
+                                                        class="fa fa-quote-left"></i>
+                                                </div>
+                                                <div class="p">
+                                                    <p>I recently purchased a
+                                                        set of
+                                                        Nacless from this
+                                                        jewellery
+                                                        store and I am
+                                                        absolutely
+                                                        delighted! The
+                                                        craftsmanship
+                                                        is exquisite and the
+                                                        designs
+                                                        are truly unique. The
+                                                        gold
+                                                        plating has a beautiful
+                                                        shine and the stones are
+                                                        set
+                                                        perfectly. I received
+                                                        many
+                                                        compliments at a family
+                                                        event. Highly
+                                                        recommended
+                                                        for anyone looking for
+                                                        quality and
+                                                        elegance!</p>
+                                                </div>
+                                                <div class="fonts">
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i
+                                                        class="fa fa-star-half-o"></i>
+                                                </div>
+                                                <!-- <div class="pic"><img
+                                                    <!-- src="images/user-3.png"
+                                                    alt></div> -->
+                                                <div class="name">
+                                                    <h4> urooj tahir</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials swiper-slide">
+                                        <div class="background">
+                                            <div class="heading">
+                                                <div class="logo">
+                                                    <i
+                                                        class="fa fa-quote-left"></i>
+                                                </div>
+                                                <div class="p">
+                                                    <p> I recently purchased a
+                                                        set
+                                                        of Earrings from this
+                                                        jewellery store and I am
+                                                        absolutely delighted!
+                                                        The
+                                                        craftsmanship is
+                                                        exquisite
+                                                        and the designs are
+                                                        truly
+                                                        unique. The gold plating
+                                                        has
+                                                        a beautiful shine and
+                                                        the
+                                                        stones are set
+                                                        perfectly. I
+                                                        received many
+                                                        compliments at
+                                                        a family event. Highly
+                                                        recommended for anyone
+                                                        looking for quality and
+                                                        elegance!</p>
+                                                </div>
+                                                <div class="fonts">
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i
+                                                        class="fa fa-star-half-o"></i>
+                                                </div>
+                                                <!-- <div class="pic"><img
+                                                    src="images/user-1.png"
+                                                    alt></div> -->
+                                                <div class="name">
+                                                    <h4> areeba tahir</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials swiper-slide">
+                                        <div class="background">
+                                            <div class="heading">
+                                                <div class="logo">
+                                                    <i
+                                                        class="fa fa-quote-left"></i>
+                                                </div>
+                                                <div class="p">
+                                                    <p> I recently purchased a
+                                                        set
+                                                        of bangles from this
+                                                        jewellery store and I am
+                                                        absolutely delighted!
+                                                        The
+                                                        craftsmanship is
+                                                        exquisite
+                                                        and the designs are
+                                                        truly
+                                                        unique. The gold plating
+                                                        has
+                                                        a beautiful shine and
+                                                        the
+                                                        stones are set
+                                                        perfectly. I
+                                                        received many
+                                                        compliments at
+                                                        a family event. Highly
+                                                        recommended for anyone
+                                                        looking for quality and
+                                                        elegance!</p>
+                                                </div>
+                                                <div class="fonts">
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i
+                                                        class="fa fa-star-half-o"></i>
+                                                </div>
+                                                <!-- <div class="pic"><img
+                                                    src="images/user-2.png"
+                                                    alt></div> -->
+                                                <div class="name">
+                                                    <h4> abdullah tahir</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials swiper-slide">
+                                        <div class="background">
+                                            <div class="heading">
+                                                <div class="logo">
+                                                    <i
+                                                        class="fa fa-quote-left"></i>
+                                                </div>
+                                                <div class="p">
+                                                    <p>I recently purchased a
+                                                        set of
+                                                        Nacless from this
+                                                        jewellery
+                                                        store and I am
+                                                        absolutely
+                                                        delighted! The
+                                                        craftsmanship
+                                                        is exquisite and the
+                                                        designs
+                                                        are truly unique. The
+                                                        gold
+                                                        plating has a beautiful
+                                                        shine and the stones are
+                                                        set
+                                                        perfectly. I received
+                                                        many
+                                                        compliments at a family
+                                                        event. Highly
+                                                        recommended
+                                                        for anyone looking for
+                                                        quality and
+                                                        elegance!</p>
+                                                </div>
+                                                <div class="fonts">
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i
+                                                        class="fa fa-star-half-o"></i>
+                                                </div>
+                                                <!-- <div class="pic"><img
+                                                    <!-- src="images/user-3.png"
+                                                    alt></div> -->
+                                                <div class="name">
+                                                    <h4> urooj tahir</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials swiper-slide">
+                                        <div class="background">
+                                            <div class="heading">
+                                                <div class="logo">
+                                                    <i
+                                                        class="fa fa-quote-left"></i>
+                                                </div>
+                                                <div class="p">
+                                                    <p> I recently purchased a
+                                                        set
+                                                        of Earrings from this
+                                                        jewellery store and I am
+                                                        absolutely delighted!
+                                                        The
+                                                        craftsmanship is
+                                                        exquisite
+                                                        and the designs are
+                                                        truly
+                                                        unique. The gold plating
+                                                        has
+                                                        a beautiful shine and
+                                                        the
+                                                        stones are set
+                                                        perfectly. I
+                                                        received many
+                                                        compliments at
+                                                        a family event. Highly
+                                                        recommended for anyone
+                                                        looking for quality and
+                                                        elegance!</p>
+                                                </div>
+                                                <div class="fonts">
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-star"
+                                                        aria-hidden="true"></i>
+                                                    <i
+                                                        class="fa fa-star-half-o"></i>
+                                                </div>
+                                                <!-- <div class="pic"><img
+                                                    src="images/user-1.png"
+                                                    alt></div> -->
+                                                <div class="name">
+                                                    <h4> areeba tahir</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                              
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="watch">
+                    <div class="cointain">
+                        <div class="backcolor">
+                            <div class="shop-grid">
+                                <div class="video">
+                                    <video src="vedios/ved-1.mp4" autoplay muted
+                                        loop
+                                        width="300" height="300">
+                                        Your browser does not support the video
+                                        tag.
+                                    </video>
+                                </div>
+                                <div class="video">
+                                    <video
+                                        src="vedios/WhatsApp Video 2025-07-06 at 16.46.01_93136f2b.mp4"
+                                        autoplay muted loop width="300"
+                                        height="300">
+                                        Your browser does not support the video
+                                        tag.
+                                    </video>
+                                </div>
+                                <div class="video">
+                                    <video
+                                        src="vedios/WhatsApp Video 2025-07-06 at 16.46.00_c3cb3495.mp4"
+                                        autoplay muted loop width="300"
+                                        height="300">
+                                        Your browser does not support the video
+                                        tag.
+                                    </video>
+                                </div>
+                                <div class="video">
+                                    <video
+                                        src="vedios/WhatsApp Video 2025-07-06 at 16.46.00_14e6bc6c.mp4"
+                                        autoplay muted loop width="300"
+                                        height="300">
+                                        Your browser does not support the video
+                                        tag.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="footer">
+                    <div class="heading">
+                        <h1>jwellery stor</h1>
+                    </div>
+                    <div class="navlinks">
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="product.html">Products</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="flexbox">
+                        <div class="icons"><a
+                                href="https://www.instagram.com/handmade_by_javeria/"><i
+                                    class="fa fa-instagram"></i></a></div>
+                        <div class="icons"><a
+                                href="https://www.facebook.com/share/16Jv4zNBcc/"><i
+                                    class="fa fa-facebook"></i></a></div>
+                        <div class="icons"><a
+                                href=" https://wa.me/+923470072307"><i
+                                    class="fa fa-whatsapp"></i></a></div>
+                        <div class="icons"><a href="mailto:example@email.com"><i
+                                    class="fa fa-envelope"></a></i></div>
+                    </div>
+                </section>
+                <script src="js/animation.js"></script>
+                <script src="js/script.js"></script>
+                <script src="js/cart.js"></script>
+
+                <script>
+                // Arrays for random product names
+                var bangleNames = [
+                    'Royal Radiance Bangle', 'Heritage Grace Bangle', 'Floral Dream Bangle', 'Classic Sparkle Bangle',
+                    'Vintage Charm Bangle', 'Elegant Twist Bangle', 'Pearl Shine Bangle', 'Golden Era Bangle',
+                    'Modern Chic Bangle', 'Textured Shine Bangle', 'Artisan Touch Bangle', 'Signature Shine Bangle',
+                    'Enamel Blossom Bangle', 'Timeless Spark Bangle', 'Charm Allure Bangle', 'Dazzle Loop Bangle',
+                    'Gleaming Halo Bangle', 'Lustrous Link Bangle', 'Radiant Wave Bangle', 'Opulent Curve Bangle'
+                ];
+                var earringNames = [
+                    'Royal Radiance Earrings', 'Heritage Grace Earrings', 'Floral Dream Earrings', 'Classic Sparkle Earrings',
+                    'Vintage Charm Earrings', 'Elegant Twist Earrings', 'Pearl Shine Earrings', 'Golden Era Earrings',
+                    'Modern Chic Earrings', 'Textured Shine Earrings', 'Artisan Touch Earrings', 'Signature Shine Earrings',
+                    'Enamel Blossom Earrings', 'Timeless Spark Earrings', 'Charm Allure Earrings', 'Dazzle Drop Earrings',
+                    'Gleaming Halo Earrings', 'Lustrous Link Earrings', 'Radiant Wave Earrings', 'Opulent Curve Earrings'
+                ];
+
+                function getRandomName(isBangle) {
+                    if (isBangle) {
+                        return bangleNames[Math.floor(Math.random() * bangleNames.length)];
+                    } else {
+                        return earringNames[Math.floor(Math.random() * earringNames.length)];
+                    }
+                }
+
+                // Change visible product names on page load
+                document.querySelectorAll('.sec-1').forEach(function(sec1) {
+                    var img = sec1.querySelector('.image img');
+                    var text = sec1.querySelector('.text h4');
+                    if (img && text) {
+                        var src = img.getAttribute('src');
+                        var isImgsFolder = src && src.startsWith('imgs/');
+                        text.textContent = getRandomName(isImgsFolder);
+                    }
+                });
+
+                // Keep the click handler for details page navigation
+                document.querySelectorAll('.sec-1 .image img').forEach(function(img) {
+                    img.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        var sec1 = img.closest('.sec-1');
+                        var src = img.getAttribute('src');
+                        var name = '';
+                        var price = '';
+                        if (sec1) {
+                            var nameElem = sec1.querySelector('.text h4');
+                            var priceElem = sec1.querySelector('.price h6');
+                            if (nameElem) name = nameElem.textContent;
+                            if (priceElem) price = priceElem.textContent;
+                        }
+                        // Check if image is from imgs/ folder
+                        var isImgsFolder = src && src.startsWith('imgs/');
+                        localStorage.setItem('selectedProductImage', src);
+                        localStorage.setItem('selectedProductName', name);
+                        localStorage.setItem('selectedProductPrice', price);
+                        localStorage.setItem('isImgsFolder', isImgsFolder ? 'true' : 'false');
+                        window.location.href = 'details.html';
+                    });
+                });
+                </script>
+
+                <script
+                    src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+                <script
+                    src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                <script>
+                         new Swiper('.card', {
+
+  loop: true,
+grabCursor: true,
+spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    620: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    840: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 10
+    }
+  }
+});
+                    </script>
+               
+            </body>
+
+        </html>

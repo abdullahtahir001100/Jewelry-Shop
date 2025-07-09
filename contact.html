@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>Contact Us - Jewelry Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contect.css">
+    
+    <link rel="stylesheet" href="css/responsive.css">
+           <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Animate.css CDN -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+     <header>
+        <div class="contain">
+            <div class="flexbox">
+                <div class="logo">
+                    <div class="col-1">
+                        <div class="image">
+                            <img src="imgs/logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <nav class="flexbox">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="shop.html">Shop Now</a></li>
+                            <li><a href="product.html" class="button">Explore now</a></li>
+                            <!-- <li><button>explorn now</button></li> -->
+                        </ul>
+                         <button class="burger" onclick="openburger()"><img src="imgs/burger.png" alt=""></li>
+                    </nav>
+            </div>
+          
+        </div>
+          <div class="links" id="togal">
+                  <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="shop.html">Shop Now</a></li>
+                            <li><a href="product.html" class="button">Explore now</a></li>
+            </div>
+    </header>
+    <script>
+        function openburger() {
+            var x = document.getElementById("togal");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    <section class="contact-section animate__animated animate__fadeInUp">
+        <div class="cointain contact-flex">
+            <div class="contact-info animate__animated animate__fadeInLeft">
+                <h1 class="contact-title">Contact Us</h1>
+                
+                <p class="contact-desc">We'd love to hear from you! Reach out with any questions, feedback, or custom requests.</p>
+                <ul class="contact-details">
+                    <li><strong>Email:</strong> abdullahtahi001@gmail.com</li>
+                    <li><strong>Phone:</strong> +92-347-0072307</li>
+                    <li><strong>Address:</strong> Yosaf-park Street-7, Sargodha, Pakistan</li>
+                </ul>
+                <div class="contact-social">
+                    <a href="https://www.facebook.com/share/16Jv4zNBcc/" class="contact-social-link">Facebook</a> |
+                    <a href="https://www.instagram.com/handmade_by_javeria/" class="contact-social-link">Instagram</a> |
+                    <a href=" https://wa.me/+923470072307" class="contact-social-link">WhatsApp</a>
+                </div>
+            </div>
+            <div class="contact-form-container animate__animated animate__fadeInRight">
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="382064f7-4bd9-4bea-8353-290696ee712c">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit" class="contact-btn">Send Message</button>
+                </form>
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+                <script>
+                    function sendEmail() {
+                        const name = document.getElementById('name').value;
+                        const email = document.getElementById('email').value;
+                        const message = document.getElementById('message').value;
+                        Email.send({
+                            Host: "smtp.gmail.com",
+                            Username: "at4105168@gmail.com",
+                            Password: "afcr wjuh vzll szig",
+                            To: 'abdullahtahi001@gmail.com',
+                            From: email,
+                            Subject: `New message from ${name}`,
+                            Body: `Name: ${name}<br>Email: ${email}<br>Message: ${message}`
+                        }).then(
+                           
+                           message => alert(message)
+                    );
+                    }
+                           
+                </script>
+            </div>
+        </div>
+    </section>
+       <section class="footer">
+            <div class="heading">
+                <h1>jwellery stor</h1>
+            </div>
+            <div class="navlinks">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flexbox">
+                <div class="icons"><a href="https://www.instagram.com/handmade_by_javeria/"><i class="fa fa-instagram"></i></a></div>
+                <div class="icons"><a href="https://www.facebook.com/share/16Jv4zNBcc/"><i class="fa fa-facebook"></i></a></div>
+                <div class="icons"><a href=" https://wa.me/+923470072307"><i class="fa fa-whatsapp"></i></a></div>
+                <div class="icons"><a href="mailto:example@email.com"><i class="fa fa-envelope"></a></i></div>
+            </div>
+        </section>
+</body>
+</html>
